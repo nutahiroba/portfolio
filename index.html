@@ -1,9 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <title>ポートフォリオサイト</title>
     <meta charset="utf-8"/>
+    <link rel="stylesheet" href="./sample_neko_files/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.min.css" integrity="sha384-i+xy8lASOql6ZKgHS55ihhlnOHCHfZyJhyeAYmMFddar7eOJBltkmB/dqgZSch71" crossorigin="anonymous">
     <style>
+      body{
+        padding-top: 50px;
+        background-color:lightgray;
+      }
       img{
         width: 300px;
         border-radius: 10%;
@@ -19,10 +25,46 @@
         margin-right: auto;
         width: 1000px;
       }
+      .jumbotron{
+        background-image: url("images/bg_blue_sample.webp");
+        color: white;
+      }
     </style>
   </head>
   <body style="background-color:#F0FFF0;" id="main">
-    <h1>Hiroto Nutaba</h1>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Portfolioのサイト</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="unknown.html">Portfolioのサイト</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="unknown.html">Home</a></li>
+            <li><a href="unknown.html#skills">Skills</a></li>
+            <li><a href="unknown.html#works">Works</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <h1>Hiroto Nutaba</h1>
+            <p class="lead">コーヒー好きな情報系大学生のポートフォリオ</p>
+          </div>
+          <div class="col-sm-4">
+            <img src="images/latteart.jpg" style="border-radius: 50%;">
+          </div>
+        </div>
+      </div>
+    </div>
     <div style="text-align: center;">
       <h2>About</h2>
       <hr noshade="">
@@ -40,7 +82,7 @@
         <h2>History</h2>
         <hr noshade=""><br>
         <div>
-          <p>2001年茨城県神栖市に生まれる。神奈川で幼少期を過ごし、親の転勤に伴い、千葉・群馬・茨城・埼玉4つの小学校に通う。2017年　埼玉県立越谷北高等学校　普通科主席合格。2020年国立　筑波大学　情報学群　知識情報・図書館学類　後期入学</p>
+          <p>2001年茨城県神栖市に生まれる。神奈川で幼少期を過ごし、親の転勤に伴い、千葉・群馬・茨城・埼玉4つの小学校に通う。<br>2017年　埼玉県立越谷北高等学校　普通科主席合格。<br>2020年国立　筑波大学　情報学群　知識情報・図書館学類　後期入学</p>
         </div>
       </div>
     </div>
