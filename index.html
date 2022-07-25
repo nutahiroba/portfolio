@@ -29,6 +29,10 @@
         background-image: url("images/bg_blue_sample.webp");
         color: white;
       }
+     .under1{
+        background: linear-gradient(transparent  70%, aqua  70%);
+        background-color: #F0FFF0;
+      }
     </style>
   </head>
   <body style="background-color:#F0FFF0;" id="main">
@@ -45,9 +49,9 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="unknown.html">Home</a></li>
-            <li><a href="unknown.html#skills">Skills</a></li>
-            <li><a href="unknown.html#works">Works</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html#Skills">Skills</a></li>
+            <li><a href="index.html#Works">Works</a></li>
           </ul>
         </div>
       </div>
@@ -69,10 +73,10 @@
       <h2>About</h2>
       <hr noshade="">
       <br>
-      <div style="display: flex;">
-        <img src="images/my_profile.JPG">
+      <div>
+        <img src="images/my_profile.JPG" style="width: 400px;">
         <p>
-        蒐場　広翔（Hiroto Nutaba）<br>
+        <span class="under1" style="font-size: 20px;">蒐場　広翔（Hiroto Nutaba）</span><br><br>
         筑波大学　情報学群　知識情報・図書館学類　3年次　知識情報システム主専攻<br>
         データ処理や自然言語処理について学んでいます。
         </p>
@@ -86,14 +90,30 @@
         </div>
       </div>
     </div>
-    <div style="text-align:center;">
+    <div id="Skills" style="text-align:center;">
       <h2>Skill</h2>
       <hr noshade="">
       <br>
-      <p>python,html/JavaScript,jQuery/css,sql,(react,php:勉強中)</p>
+      <h3>python,html/JavaScript,jQuery/css,sql,(react,php:勉強中)</h3>
+      <div class="starter-template">
+        <div class="row text-center">
+          <h2>Characteristics</h2>
+          <hr noshade="">
+          <br>
+        <div class="col-sm-4">
+            <h2><i class="bi bi-people-fill" style="font-size:60px;"></i><br>コミュニケーション</h2><p>幼少期に多数の引っ越しを経験し、初対面でもフランクな交流ができる。学生時代にも様々な団体のリーダーを務めた。</p>
+          </div>
+          <div class="col-sm-4">
+            <h2><i class="bi bi-clipboard2-data" style="font-size:60px;"></i><br>データ処理</h2><p>テクストデータ処理を専門分野として学んでおり、pandasを用いた形態素解析や、正規表現に寄る処理、SQLも使用可能</p>
+          </div>
+          <div class="col-sm-4">
+            <h2><i class="bi bi-pencil-fill" style="font-size:60px;"></i><br>勤勉</h2><p>こまめに物事に取り組む。努力を惜しまず、自ら学んでいく姿勢があります。html/jsを初めて一か月で制作物を作成・デプロイまで実行した。</p>
+          </div>
+        </div>
+      </div>
     </div>
     <div style="text-align: center;">
-      <h2>Portfolio</h2>
+      <h2 id="Works">Works</h2>
       <hr noshade="">
       <br>
       <h2><a href="https://www.u.tsukuba.ac.jp/~s2011583/GeoGuesser/top.html">local版GeoGuesser</a></h2>
