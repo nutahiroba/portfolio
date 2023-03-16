@@ -18,26 +18,35 @@
     </header>
     <main>
       <section id="hero">
-        <h1>私のポートフォリオ</h1>
-        <p>エンジニアのポートフォリオサイトです。</p>
+        <h1>My Portfolio</h1>
+        <p>大学生エンジニアのポートフォリオサイト</p>
+      </section>
+      <section id="about">
+        <div class="container">
+          <h2>自己紹介</h2>
+          <div class="row">
+              <p>私はエンジニアとして数年の経験があり、主にWebアプリケーションの開発に携わってきました。最近はフロントエンド技術にも興味を持っており、Vue.jsやReactなどのフレームワークを学習中です。</p>
+              <p>趣味はスポーツで、週末にはサッカーやバスケットボールをしてリフレッシュしています。</p>
+          </div>
+        </div>
       </section>
       <section id="projects">
         <h2>プロジェクト</h2>
         <div class="project-container">
           <div class="project">
-            <img src="images\geoguesser_tkb.png" alt="プロジェクト1の画像">
-            <h3>プロジェクト1</h3>
-            <p>このプロジェクトの説明。</p>
+            <img src="{% static 'images/geoguesser_tkb.png' %}" alt="GeoGuesser in tsukuba">
+            <h3><a href="https://www.u.tsukuba.ac.jp/~s2011583/GeoGuesser/top.html">GeoGuesser in tsukuba</a></h3>
+            <p>大学の主専攻実習にて3人グループで1カ月程度で作成した初めての開発経験。html/JavaScript (jQuery)/cssに初めて触れて開発をはじめ、google maps apiを利用して、比較的動くシステムにまとめることができた。従来のGeoGuesser（<a href="https://www.geoguessr.com/">https://www.geoguessr.com/</a>)を参考に、地図の表示範囲を指定することで身内で盛り上がれるようなシステム</p>
           </div>
           <div class="project">
-            <img src="project2.png" alt="プロジェクト2の画像">
-            <h3>プロジェクト2</h3>
-            <p>このプロジェクトの説明。</p>
+            <img src="{% static 'images/meshireco.png' %}" alt="プロジェクト2の画像">
+            <h3><a href="https://meshireco.netlify.app/">メシレコ</a></h3>
+            <p>筑波大学PBL開発「enPit」に参加した際に5人グループで、1週間で開発を行った。<br>スワイプで近くにある飲食店情報を次々と表示する「飯レコメンド」アプリ。<br>Hot Pepper グルメのapiを利用して、Material UIのCardコンポーネントで店を表示している。位置情報の1キロ圏内にある店情報を表示している。</p>
           </div>
           <div class="project">
-            <img src="project3.png" alt="プロジェクト3の画像">
-            <h3>プロジェクト3</h3>
-            <p>このプロジェクトの説明。</p>
+            <img src="{% static 'images/Campus223.png' %}" alt="Campus223">
+            <h3><a href="https://www.stb.tsukuba.ac.jp/~zdk/home/campus">全代会広報誌『Campus』222号~</a></h3>
+            <p>筑波大学の最上位公的学生組織「全学学類・専門学群・総合学域群代表者会議（全代会）」の広報誌の編集担当を勤め、記事の取材や執筆・Adobe Indesignを用いたレイアウトを行った。10人規模で年3回発行をしており、チームワークを深めることにつながった。</p>
           </div>
         </div>
       </section>
