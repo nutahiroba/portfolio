@@ -1,127 +1,56 @@
-{% load static %}
-<!-- 静的ファイルであることの記述 -->
-
 <!DOCTYPE html>
-
-<html lang="ja">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="..\app\static\css\style.css" />
-    
-    <title>My Portfolio</title>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" href="app\static\css\bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.min.css" integrity="sha384-i+xy8lASOql6ZKgHS55ihhlnOHCHfZyJhyeAYmMFddar7eOJBltkmB/dqgZSch71" crossorigin="anonymous">
+    <title>ポートフォリオ</title>
+    <link rel="stylesheet" type="text/css" href="app\static\css\openai.css">
   </head>
-  <body id="main">
-    {%include "app\header.html"%}
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Portfolioのサイト</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">Portfolioのサイト</a>
-          </div>
-        </div>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">ホーム</a></li>
+          <li><a href="#">プロジェクト</a></li>
+          <li><a href="#">経歴</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
       </nav>
-      <div class="jumbotron">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8">
-              <h1>Hiroto Nutaba</h1>
-              <p class="lead">コーヒー好きな情報系大学生のポートフォリオ</p>
-            </div>
-            <div class="col-sm-4">
-              <img src="..\app\images/latteart.jpg" style="border-radius: 50%;">
-            </div>
+    </header>
+    <main>
+      <section id="hero">
+        <h1>私のポートフォリオ</h1>
+        <p>エンジニアのポートフォリオサイトです。</p>
+      </section>
+      <section id="projects">
+        <h2>プロジェクト</h2>
+        <div class="project-container">
+          <div class="project">
+            <img src="images\geoguesser_tkb.png" alt="プロジェクト1の画像">
+            <h3>プロジェクト1</h3>
+            <p>このプロジェクトの説明。</p>
+          </div>
+          <div class="project">
+            <img src="project2.png" alt="プロジェクト2の画像">
+            <h3>プロジェクト2</h3>
+            <p>このプロジェクトの説明。</p>
+          </div>
+          <div class="project">
+            <img src="project3.png" alt="プロジェクト3の画像">
+            <h3>プロジェクト3</h3>
+            <p>このプロジェクトの説明。</p>
           </div>
         </div>
-      </div>
-      <div style="text-align: center;">
-        <h2>About</h2>
-        <hr noshade="">
-        <br>
-        <div>
-          <p>
-          <span class="under1" style="font-size: 20px;">蒐場　広翔（Hiroto Nutaba）</span><br><br>
-          筑波大学　情報学群　知識情報・図書館学類　3年次　知識情報システム主専攻<br>
-          データ処理や自然言語処理について学んでいます。
-          </p>
-        </div>
-      </div>
-      <div style="text-align: center;">
-          <h2>History</h2>
-          <hr noshade=""><br>
-          <div>
-            <p>2001年茨城県神栖市に生まれる。神奈川で幼少期を過ごし、親の転勤に伴い、千葉・群馬・茨城・埼玉4つの小学校に通う。<br>2017年　埼玉県立越谷北高等学校　普通科主席合格。<br>2020年国立　筑波大学　情報学群　知識情報・図書館学類　後期入学</p>
-          </div>
-        </div>
-      </div>
-      <div id="Skills" style="text-align:center;">
-        <h2>Skill</h2>
-        <hr noshade="">
-        <br>
-        <h3>python,html/JavaScript,jQuery/css,sql,(react,php:勉強中)</h3>
-        <div class="starter-template">
-          <div class="row text-center">
-            <h2>Characteristics</h2>
-            <hr noshade="">
-            <br>
-          <div class="col-sm-4">
-              <h2><i class="bi bi-people-fill" style="font-size:60px;"></i><br>コミュニケーション</h2><p>幼少期に多数の引っ越しを経験し、初対面でもフランクな交流ができる。学生時代にも様々な団体のリーダーを務めた。</p>
-            </div>
-            <div class="col-sm-4">
-              <h2><i class="bi bi-clipboard2-data" style="font-size:60px;"></i><br>データ処理</h2><p>テクストデータ処理を専門分野として学んでおり、pandasを用いた形態素解析や、正規表現に寄る処理、SQLも使用可能</p>
-            </div>
-            <div class="col-sm-4">
-              <h2><i class="bi bi-pencil-fill" style="font-size:60px;"></i><br>勤勉</h2><p>こまめに物事に取り組む。努力を惜しまず、自ら学んでいく姿勢があります。html/jsを初めて一か月で制作物を作成・デプロイまで実行した。</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div style="text-align: center;">
-        <h2 id="Works">Works</h2>
-        <hr noshade="">
-        <br>
-        <h2><a href="https://www.u.tsukuba.ac.jp/~s2011583/GeoGuesser/top.html">local版GeoGuesser</a></h2>
-        <div style="display: flex;">
-          <a><img src="..\app\images/geoguesser_tkb.png"/></a>
-          <p>大学の主専攻実習にて3人グループで1カ月程度で作成した初めての開発経験。html/JavaScript (jQuery)/cssに初めて触れて開発をはじめ、google maps apiを利用して、比較的動くシステムにまとめることができた。従来のGeoGuesser（<a href="https://www.geoguessr.com/">https://www.geoguessr.com/</a>)を参考に、地図の表示範囲を指定することで身内で盛り上がれるようなシステム</p>
-        </div>
-          <h2><a href="https://www.u.tsukuba.ac.jp/~s2011583/csv_search/jks5-1.html">csvサーチャー</a></h2>
-          <div style="display: flex;">
-            <a href=""><img src="..\app\images/csv_seacher.png"></a>
-            <p>大学のcsv形式の成績データを処理したいという発想から作成したもので、汎用性を上げるためにcsvファイルをインポートできるように1週間ほどで開発した。完全一致検索とレーベンシュタイン距離による類似度計算によるソートシステムを実装した。</p>
-          </div>
-          <div>
-            <h2><a href="https://nutahiroba.github.io/restaurant_search/">飲食店検索</a></h2>
-            <div style="display:flex">
-              <img src="..\app\images/restaurant_search.png" alt="">
-              <p>google maps places apiを用いて、飲食店の情報を表示している。カテゴリを入力することで検索できる。</p>
-            </div>
-          </div>
-          <div>
-            <h2><a href="https://meshireco.netlify.app/">メシレコ</a></h2>
-            <div style="display:flex">
-              <img src="..\app\images/meshireco.png" alt="">
-              <p>筑波大学PBL開発「enPit」に参加した際に5人グループで、1週間で開発を行った。<br>スワイプで近くにある飲食店情報を次々と表示する「飯レコメンド」アプリ。<br>Hot Pepper グルメのapiを利用して、Material UIのCardコンポーネントで店を表示している。位置情報の1キロ圏内にある店情報を表示している。</p>
-            </div>
-          </div>
-          <div>
-            <h2><a href="https://www.stb.tsukuba.ac.jp/~zdk/home/campus">全代会広報誌『Campus』222号~</a></h2>
-            <div style="display:flex">
-              <img src="..\app\images/Campus223.png" alt="">
-              <p>筑波大学の最上位公的学生組織「全学学類・専門学群・総合学域群代表者会議（全代会）」の広報誌の編集担当を勤め、記事の取材や執筆・Adobe Indesignを用いたレイアウトを行った。10人規模で年3回発行をしており、チームワークを深めることにつながった。</p>
-            </div>
-          </div>
-        </div>
-        {% include "app\footer.html"%}
-    </body>
+      </section>
+      <section id="experience">
+        <h2>経歴</h2>
+        <ul>
+          <li>経歴1</li>
+          <li>経歴2</li>
+          <li>経歴3</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>©2023, 私のポートフォリオ. All rights reserved.</p>
+    </footer>
   </body>
 </html>
