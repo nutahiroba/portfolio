@@ -1,0 +1,32 @@
+.center{
+  text-align: center;
+  color: green;
+}
+body{
+  padding-top: 50px;
+  background-color:lightgray;
+  font-family: Noto Sans JP,-apple-system,blinkmacsystemfont,Segoe UI,Hiragino Kaku Gothic ProN,BIZ UDPGothic,meiryo,sans-serif;
+}
+img{
+  width: 300px;
+  border-radius: 10%;
+  padding: 20px;
+}
+hr{
+  height:2px;
+  width:500px;
+}
+#main{
+  background-color:#F0FFF0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+.jumbotron{
+  background-image: url("images/bg_blue_sample.webp");
+  color: white;
+}
+.under1{
+  background:white;
+  background-color: #F0FFF0;
+}
